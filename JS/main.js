@@ -123,17 +123,17 @@ Calculator.prototype.compute = function () {
                 this.compute();
             break;
             case 'ArcSin':
-                this.answer = Math.asin((ans/180)*Math.PI);
+                this.answer = Math.asin(ans)*180/Math.PI;
                 this.trigOperation = null;
                 this.compute();
             break;
             case 'ArcCos':
-                this.answer = Math.acos((ans/180)*Math.PI);
+                this.answer = Math.acos(ans)*180/Math.PI;
                 this.trigOperation = null;
                 this.compute();           
              break;
             case 'ArcTan':
-                this.answer = Math.atan((ans/180)*Math.PI);
+                this.answer = Math.atan(ans)*180/Math.PI;
                 this.trigOperation = null;
                 this.compute();
                 default:
