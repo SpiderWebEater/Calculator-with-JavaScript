@@ -1,84 +1,110 @@
-*{
+* {
   box-sizing: border-box;
-  margin : 0;
-  padding : 0;
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(ro right,#fff, #ccc, #fff, #ccc);
-  font-size: 2.5rem;
-  font-weight: 600;
-}
 
 
-.grid{
-  position: absolute;
+
+.grid {
+  position: fixed;
   left: 20%;
-  width: 60%;
   min-height: 100vh;
-  /* border: blue solid 1px; */
-  justify-content: center;
-  /* align-content: center; */
+  /* margin-left: 1rem; */
   display: grid;
   grid-template-columns: repeat(2, 400px);
   grid-template-rows: repeat(3, 1fr);
-  /* grid-template-rows: minmax(100px, auto) ; */
 }
 
-.grid .display{
-  display: flex;  
-  /* max-height: 250px; */
+.grid .display {
+  display: flex;
   flex-direction: column;
   text-align: right;
   padding-right: 2rem;
   justify-content: space-around;
   border-radius: 10px 10px 0 0;
-  background: #4dc4ff;
+  background: #c4eddd;
   grid-column: span 2;
   grid-row: 1fr;
 }
-.grid .display .expression{
-  color: #ddd;
+
+.grid .display .expression {
+  color: #233142;
   font-size: 2rem;
 }
-.grid .display .answer{
-  color: #fff;
+
+.grid .display .answer {
+  color: #233142;
   font-size: 3rem;
 }
 
 
-.grid .left{
+.grid .left {
   display: grid;
- grid-template-columns: repeat(3, 1fr);
- grid-row: span 2;
-
-}
-
-
-.grid .right{
-  display: grid;
-  grid-template-columns:  repeat(4, 100px);
+  grid-template-columns: repeat(3, 1fr);
   grid-row: span 2;
 
 }
 
-.span-two{
+
+.grid .right {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-row: span 2;
+
+}
+
+.span-two {
   grid-column: span 2;
 }
 
-button:hover{
-  background: #fff;
-  color:#3939ff;
+button:hover {
+  background: #c4eddd;
+  color: #233142;
 
 }
 
-button{
-  background: #3939ff;
-  color:#fff;
-  border: #3939ff 1px solid;
+button {
+  background: #233142;
+  color: #fff;
+  border: #c4eddd 1px solid;
   cursor: pointer;
+}
+
+table {
+  width: 100%;
+  min-height: 100vh;
+  background: #233142;
+  overflow: scroll;
+}
+
+th {
+  color: #c4eddd;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding-bottom: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  background: #c4eddd;
+  padding: 0.6rem;
+  color: #233142;
+  position: fixed;
+  top: -0.1%;
+  left: 20%;
+  cursor: pointer;
+  border-radius: 10px 0 0 0;
+}
+
+.link:hover {
+  color: #c4eddd;
+  background: #233142;
 }

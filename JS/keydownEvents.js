@@ -95,38 +95,37 @@ document.addEventListener('keypress', function (event) {
         case 68:
             buttons.delete = "CE";
             break;
-            
+
         default:
             break;
     }
 
-if(buttons.number) {
-    calculator.appendNumber(buttons.number);
-    buttons.number = null;
-}
-if(buttons.operation){
-    calculator.selectOperation(buttons.operation);
-    buttons.operation = null;
-}
-if(buttons.trig){
-    calculator.selectTrigOperation(buttons.trig);
-    buttons.trig = null;
-}
-if(buttons.power){
-    calculator.selectPower(buttons.power);
-    buttons.power = null;
-}
-if(buttons.equals){
-    calculator.compute();
-    buttons.equals = false;
-}
-if(buttons.delete === "Delete"){
-calculator.delete();
-buttons.delete = null;
-}else if(buttons.delete==="CE"){
-calculator.clearAll();
-buttons.delete = null;
-}
-calculator.updateDisplay();
+    if (buttons.number) {
+        calculator.appendNumber(buttons.number);
+        buttons.number = null;
+    }
+    if (buttons.operation) {
+        calculator.selectOperation(buttons.operation);
+        buttons.operation = null;
+    }
+    if (buttons.trig) {
+        calculator.selectTrigOperation(buttons.trig);
+        buttons.trig = null;
+    }
+    if (buttons.power) {
+        calculator.selectPower(buttons.power);
+        buttons.power = null;
+    }
+    if (buttons.equals) {
+        calculator.compute();
+        buttons.equals = false;
+    }
+    if (buttons.delete === "Delete") {
+        calculator.delete();
+        buttons.delete = null;
+    } else if (buttons.delete === "CE") {
+        calculator.clearAll();
+        buttons.delete = null;
+    }
+    calculator.updateDisplay();
 })
-
