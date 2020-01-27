@@ -16,6 +16,9 @@ body{
 
 
 .grid{
+  position: absolute;
+  left: 20%;
+  width: 60%;
   min-height: 100vh;
   /* border: blue solid 1px; */
   justify-content: center;
