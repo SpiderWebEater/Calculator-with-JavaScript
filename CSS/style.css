@@ -14,7 +14,6 @@
   position: fixed;
   left: 20%;
   min-height: 100vh;
-  /* margin-left: 1rem; */
   display: grid;
   grid-template-columns: repeat(2, 400px);
   grid-template-rows: repeat(3, 1fr);
@@ -98,7 +97,7 @@ th {
   padding: 0.6rem;
   color: #233142;
   position: fixed;
-  top: -0.1%;
+  top: 0%;
   left: 20%;
   cursor: pointer;
   border-radius: 10px 0 0 0;

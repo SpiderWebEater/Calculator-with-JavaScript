@@ -1,6 +1,4 @@
-document.addEventListener("keypress", function (event) {
-    console.log(event.which);
-    console.log(event.key);
+document.addEventListener('keypress', function (event) {
     let buttons = {
         number: null,
         operation: null,
@@ -10,6 +8,7 @@ document.addEventListener("keypress", function (event) {
         equals: false
     };
     switch (event.which) {
+
         case 43:
             buttons.operation = event.key;
             break;
@@ -17,10 +16,10 @@ document.addEventListener("keypress", function (event) {
             buttons.operation = event.key;
             break;
         case 42:
-            buttons.operation = "x";
+            buttons.operation = 'x';
             break;
         case 47:
-            buttons.operation = "÷";
+            buttons.operation = '÷';
             break;
         case 48:
             buttons.number = event.key;
@@ -53,34 +52,34 @@ document.addEventListener("keypress", function (event) {
             buttons.number = event.key;
             break;
         case 115:
-            buttons.trig = "Sin";
+            buttons.trig = 'Sin';
             break;
         case 83:
-            buttons.trig = "ArcSin";
+            buttons.trig = 'ArcSin';
             break;
         case 116:
-            buttons.trig = "Tan";
+            buttons.trig = 'Tan';
             break;
         case 84:
-            buttons.trig = "ArcTan";
+            buttons.trig = 'ArcTan';
             break;
         case 99:
-            buttons.trig = "Cos";
+            buttons.trig = 'Cos';
             break;
         case 67:
-            buttons.trig = "ArcCos";
+            buttons.trig = 'ArcCos';
             break;
         case 113:
-            buttons.power = "√";
+            buttons.power = '√';
             break;
         case 113:
-            buttons.power = "√";
+            buttons.power = '√';
             break;
         case 112:
-            buttons.power = "x<sup>2</sup>";
+            buttons.power = 'x<sup>2</sup>';
             break;
         case 80:
-            buttons.power = "x<sup>n</sup>";
+            buttons.power = 'x<sup>n</sup>';
             break;
         case 61:
             buttons.equals = true;
@@ -127,4 +126,4 @@ document.addEventListener("keypress", function (event) {
         buttons.delete = null;
     }
     calculator.updateDisplay();
-});
+})
