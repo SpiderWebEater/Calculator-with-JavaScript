@@ -13,10 +13,11 @@
 .grid {
   position: fixed;
   left: 20%;
-  min-height: 100vh;
+  height: 100vh;
+  width: 60%;
   display: grid;
-  grid-template-columns: repeat(2, 400px);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 3fr);
 }
 
 .grid .display {
@@ -52,7 +53,7 @@
 
 .grid .right {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
   grid-row: span 2;
 
 }
@@ -106,4 +107,39 @@ th {
 .link:hover {
   color: #c4eddd;
   background: #233142;
+}
+
+
+
+
+
+
+@media (max-width: 799px){
+.grid{
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  left: 10%;
+}
+
+.grid .display{
+  height: 40%;
+}
+.grid .left{
+  height: 30%;
+}
+.grid .right{
+  height: 30%;
+  border-top: #c4eddd 5px solid;
+}
+
+}
+
+@media (max-width: 419px){
+  .grid{
+    width: 100%;
+    left: 0;
+  }
 }
